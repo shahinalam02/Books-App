@@ -11,6 +11,12 @@ class ClassCatalog extends StatelessWidget {
     return Stack(
       children: [
         Padding(
+          padding: const EdgeInsets.only(left: 40.0, top: 170),
+          child: Text("class 1",
+              style: GoogleFonts.poppins(
+                  fontSize: 30.0, color: Color(0xFF9683BD))),
+        ),
+        Padding(
           padding: const EdgeInsets.only(top: 30.0),
           child: Container(
             margin: EdgeInsets.only(left: 20),
@@ -47,12 +53,6 @@ class ClassCatalog extends StatelessWidget {
             height: 120.0,
             width: 100.0,
           ),
-        ),
-        Padding(
-          padding: const EdgeInsets.only(left: 30.0, top: 160),
-          child: Text("class ",
-              style: GoogleFonts.poppins(
-                  fontSize: 30.0, color: Color(0xFF9683BD))),
         ),
       ],
     );

@@ -47,8 +47,8 @@ class SecondPage extends StatelessWidget {
                     gridDelegate:
                         const SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2,
-                      childAspectRatio: 4 / 4,
-                      crossAxisSpacing: 10.0,
+                      childAspectRatio: 1 / 1,
+                      crossAxisSpacing: 0,
                       mainAxisSpacing: 10.0,
                     ),
                     itemBuilder: (BuildContext context, index) =>
