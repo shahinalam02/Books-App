@@ -1,7 +1,7 @@
-class booksDataSource {
+class booksDatasource {
   static List<Map?>? books = [
     {
-      "class": "Class 1",
+      "class_number": "Class 1",
       "books": "3",
       "subject1": "Bangla",
       "subject2": "English For Today",
@@ -9,7 +9,7 @@ class booksDataSource {
       "img": "",
     },
     {
-      "class": "Class 2",
+      "class_number": "Class 2",
       "books": "3",
       "subject1": "Bangla",
       "subject2": "English For Today",
@@ -17,7 +17,7 @@ class booksDataSource {
       "img": "",
     },
     {
-      "class": "Class 3",
+      "class_number": "Class 3",
       "books": "9",
       "subject1": "Bangla",
       "subject2": "English For Today",
@@ -31,7 +31,7 @@ class booksDataSource {
       "img": "",
     },
     {
-      "class": "Class 4",
+      "class_number": "Class 4",
       "books": "9",
       "subject1": "Bangla",
       "subject2": "English For Today",
@@ -45,7 +45,7 @@ class booksDataSource {
       "img": "",
     },
     {
-      "class": "Class 5",
+      "class_number": "Class 5",
       "books": "9",
       "subject1": "Bangla",
       "subject2": "English For Today",
@@ -59,7 +59,7 @@ class booksDataSource {
       "img": "",
     },
     {
-      "class": "Class 6",
+      "class_number": "Class 6",
       "books": "19",
       "subject1": "Ananda Path",
       "subject2": "Bangla Bakoron",
@@ -83,7 +83,7 @@ class booksDataSource {
       "subject19": "Arts and Crafts",
     },
     {
-      "class": "Class 7",
+      "class_number": "Class 7",
       "books": "19",
       "subject1": "Ananda Path",
       "subject2": "Bangla Bakoron",
@@ -107,7 +107,7 @@ class booksDataSource {
       "subject19": "Arts and Crafts",
     },
     {
-      "class": "Class 8",
+      "class_number": "Class 8",
       "books": "18",
       "subject1": "Ananda Path",
       "subject2": "Bangla Bakoron",
@@ -130,7 +130,7 @@ class booksDataSource {
       "subject18": "Arts and Crafts",
     },
     {
-      "class": "Class 9",
+      "class_number": "Class 9",
       "books": "30",
       "subject1": "Ananda Path",
       "subject2": "Bangla Bakoron",
@@ -164,7 +164,7 @@ class booksDataSource {
       "subject30": "Higher Mathematics",
     },
     {
-      "class": "Class 10",
+      "class_number": "Class 10",
       "books": "30",
       "subject1": "Ananda Path",
       "subject2": "Bangla Bakoron",

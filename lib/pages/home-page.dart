@@ -17,7 +17,7 @@ class HomePage extends StatelessWidget {
             alignment: Alignment.center,
             children: [
               Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(300),
                     bottomRight: Radius.circular(300),
@@ -43,9 +43,9 @@ class HomePage extends StatelessWidget {
             padding: const EdgeInsets.only(top: 50.0, left: 50),
             child: Text("Never stop learning. Never stop growing.",
                 style: GoogleFonts.poppins(
-                    fontSize: 30.0, color: Color(0xFF9683BD))),
+                    fontSize: 30.0, color: const Color(0xFF9683BD))),
           ),
-          Divider(
+          const Divider(
             height: 100,
             thickness: 2,
             color: Color(0xFF8C52FF),
@@ -63,7 +63,7 @@ class HomePage extends StatelessWidget {
             child: Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(30.0),
-                color: Color(0xFF8C52FF),
+                color: const Color(0xFF8C52FF),
               ),
               height: 70,
               width: 300,

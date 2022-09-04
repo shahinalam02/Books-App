@@ -1,10 +1,15 @@
+import 'package:books_app/pages/home-page.dart';
+import 'package:books_app/pages/third_page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../data/data_source.dart';
 import '../widgets/class_catalog.dart';
 
 class SecondPage extends StatelessWidget {
-  const SecondPage({Key? key}) : super(key: key);
+  SecondPage({Key? key}) : super(key: key);
+
+  var bookData = booksDatasource.books;
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +25,7 @@ class SecondPage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Padding(
+                  const Padding(
                       padding: EdgeInsets.only(
                     top: 100.0,
                     bottom: 0,
@@ -29,30 +34,41 @@ class SecondPage extends StatelessWidget {
                     "images/book_icon2.png",
                     width: 60.0,
                   ),
-                  SizedBox(width: 20.0),
+                  const SizedBox(width: 20.0),
                   Text(
                     "Path Pustak",
                     style: GoogleFonts.poppins(
                       fontSize: 35.0,
-                      color: Color(0xFF8C52FF),
+                      color: const Color(0xFF8C52FF),
                     ),
                   ),
                 ],
               ),
-              Container(
-                height: 650,
-                width: 400,
-                child: GridView.builder(
-                    itemCount: 6,
+              InkWell(
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => ThirdPage(),
+                    ),
+                  );
+                },
+                child: SizedBox(
+                  height: 650,
+                  width: 400,
+                  child: GridView.builder(
+                    itemCount: bookData!.length,
                     gridDelegate:
                         const SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2,
                       childAspectRatio: 1 / 1,
-                      crossAxisSpacing: 0,
-                      mainAxisSpacing: 10.0,
+                      crossAxisSpacing: 12.0,
+                      mainAxisSpacing: 12.0,
                     ),
-                    itemBuilder: (BuildContext context, index) =>
-                        ClassCatalog()),
+                    itemBuilder: (BuildContext context, index) => ClassCatalog(
+                      classnumber: "${bookData![index]!["class_number"]}",
+                    ),
+                  ),
+                ),
               ),
             ],
           ),
